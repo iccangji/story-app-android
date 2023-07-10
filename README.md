@@ -1,25 +1,19 @@
 # story-app-android
-Based on submission of [Belajar Pengembangan Aplikasi Android Intermediate](https://www.dicoding.com/academies/352/)
-#### Beware! Please use this repo as reference only, every plagiarism get automated detected
+#### Implementing [Android Jetpack Compose](https://developer.android.com/jetpack/compose) to build Native UI on Android App Development
+This app display on 25 Top Anime based on [Top Anime MyAnimeList](https://myanimelist.net/topanime.php), with local bookmark feature
+<br>Based on submission of [Belajar Membuat Aplikasi Android dengan Jetpack Compose](https://www.dicoding.com/academies/445)
+### Beware! Please use this repo as reference only, every plagiarism get automated detected
 
 ## Screenshots
-![WhatsApp Image 2023-07-10 at 10 48 3c7 PM](https://github.com/iccangji/story-app-android/assets/77067538/e2d975c0-195d-4b7a-811f-f34b2f4b2870)
-![WhatsApp Image 2023-07-10 at 10 48 38 PM](https://github.com/iccangji/story-app-android/assets/77067538/8d331f81-b94e-43cb-acef-6f53c8ee5167)
-![WhatsApp Image 2023-07-10 at 10 48 3c8 PM](https://github.com/iccangji/story-app-android/assets/77067538/85450a87-4003-4279-92f7-60344340b6c9)
-![WhatsApp Image 2023-07-10 at 10 48 37 PM(1)](https://github.com/iccangji/story-app-android/assets/77067538/38b705b8-b1be-4dd4-b041-c9afd15938c5)
+
+<img src="https://github.com/iccangji/story-app-android/assets/77067538/5425ee07-7836-4055-8455-e9323299c748" width="200" />
+<img src="https://github.com/iccangji/story-app-android/assets/77067538/470e5294-77ab-45ff-98f6-9a4e7c1424dc" width="200" />
+<img src="https://github.com/iccangji/story-app-android/assets/77067538/290a6176-e96b-4316-91d4-48e5797183f5" width="200" />
+<img src="https://github.com/iccangji/story-app-android/assets/77067538/0bb09e20-67e2-47d9-ab64-906fad507d54" width="200" />
 
 ## API Reference
-#### Story API
+#### Top Anime API
 
 ```
-  https://story-api.dicoding.dev/v1/
+  https://api.jikan.moe/v4/top/anime
 ```
-#### Maps API
-
-Get you maps API on [Google Cloud Console Credentials](https://console.cloud.google.com/google/maps-apis/credentials)
-
-## Installation
-
-- Clone this repo
-- Change local configuration based on API key
-- Change Map API key in AndroidManifest file
