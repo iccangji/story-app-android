@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    app:startDestination="@+id/navigation_list">
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.submissionstoryapp.ui.fragment.ListStoryFragment"
+        tools:layout="@layout/fragment_list_story" />
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.example.submissionstoryapp.ui.fragment.MapStoryFragment"
+        tools:layout="@layout/fragment_map_story" />
+</navigation>

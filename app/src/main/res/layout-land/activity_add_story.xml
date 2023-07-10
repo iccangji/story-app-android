@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.AddStoryActivity"
+    android:padding="16dp">
+    <ImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/backgrounds/scenic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_center_vertical"
+        android:contentDescription="@string/image_preview" />
+
+    <EditText
+        android:id="@+id/ed_add_description"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:padding="8dp"
+        android:layout_marginStart="16dp"
+        android:autofillHints=""
+        android:hint="@string/add_description"
+        android:inputType="text"
+        android:gravity="top"
+        android:background="@drawable/rounded_corner_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_center_vertical"
+        app:layout_constraintTop_toTopOf="@id/iv_preview" />
+    <CheckBox
+        android:id="@+id/cb_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ed_add_description"
+        android:text="@string/send_location"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/ed_add_description"/>
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_story"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ed_add_description" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
